@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NYCSchoolDataHS</string>
+    <string name="title_activity_school_information">SchoolInformationActivity</string>
+</resources>
