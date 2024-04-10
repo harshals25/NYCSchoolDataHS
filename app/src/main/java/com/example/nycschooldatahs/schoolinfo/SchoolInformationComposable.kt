@@ -71,7 +71,7 @@ fun NoInformationPresent(
             )
             Spacer(modifier = modifier.height(8.dp))
             Text(
-                // In production app, we can block the user on first screen itself
+                // we can block the user on first screen itself
                 // we can call the API on click of the item in the list and block/show user appropriate message.
                 textAlign = TextAlign.Center,
                 text = "No information is available for $schoolName, please try a different school.",
