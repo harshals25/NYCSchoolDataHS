@@ -67,8 +67,7 @@ fun takeMeToNextScreen(
     context: Context,
     nycSchoolResponse: NYCSchoolResponse
 ) {
-    // if I had more time, I'd have implemented Jetpack Compose Navigation or some other library with the current use case
-    // instead of using intents.
+    // wanted to user Navigation, could'nt so used Intents
     val intent = Intent(context, SchoolInformationActivity::class.java)
     intent.putExtra("dbn", nycSchoolResponse.dbn)
     intent.putExtra("schoolName",nycSchoolResponse.school_name)
