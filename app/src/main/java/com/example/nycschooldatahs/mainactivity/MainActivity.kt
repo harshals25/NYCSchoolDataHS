@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
         fetchData()
     }
 
-    // given more time, i'd separate out the logics into a MainActivityService class and also create an interface which i'd use to
+    // separate out the logics into a MainActivityService class and also create an interface which can be used to
     // call all the functions inside MainActivityService, increasing testability and code readability.
     // it'll also increase dependency injection as we can include what to pass to what function as required.
 
@@ -78,7 +78,6 @@ class MainActivity : ComponentActivity() {
     }
 
 
-    // given I had more time, I'd make these two methods consistent, pass the list when required directly and display offline/online with just one function.
 
     private fun displayListFromAPI() {
         setContent {
@@ -87,9 +86,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                 )
                 {
-                    // if i had more time i'd have used Navigation instead of just intents to go from one screen to another.
                     val navController = rememberNavController()
-//                    Navigation(navController = navController)
+//                    Navigation(navController = navController) dont know how to use NavController. Yet!
                     NycSchoolListPaginated(
                         modifier = Modifier.fillMaxSize(),
                         navController,
