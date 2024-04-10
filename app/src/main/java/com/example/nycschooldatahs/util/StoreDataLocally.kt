@@ -7,7 +7,7 @@ import com.google.gson.Gson
 
 class StoreDataLocally (private val context: Context) {
 
-    // Future implementation - Use Room DB instead of Shared Preference.
+    // Next to learn -  Use Room DB instead of Shared Preference.
     // Paging 3 given by JetPack compose works with RoomDB, can be used to enhance code
 
     private val gson = Gson()
