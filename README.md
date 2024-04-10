@@ -25,7 +25,7 @@ The app consists of two main screens:
 - **ViewModel**: Part of the Android Architecture Components, ViewModel provides data to the UI and survives configuration changes.
 - **LiveData**: An observable data holder class from the Android Architecture Components, used to notify UI components about data changes.
 - **Coroutines**: Kotlin's native solution for asynchronous programming, used for managing background tasks efficiently.
-- **Paging 3**: Part of the Android Architecture Components, Paging 3 helps with pagination of data in RecyclerViews.
+
 
 ## Getting Started
 
