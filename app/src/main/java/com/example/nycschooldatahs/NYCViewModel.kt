@@ -51,7 +51,7 @@ class NYCViewModel(private val nycRepository: NYCRepository, private val  header
         }
     }
 
-    // if i had more time, I would've implemented pagination using Paging 3 which would've made storing data locally easy with RoomDB
+
     fun getNYCSchoolInfoPaging(header : String) {
         viewModelScope.launch {
             try {
@@ -90,7 +90,7 @@ class NYCViewModel(private val nycRepository: NYCRepository, private val  header
     }
 
 
-    // if we had implemented a refresh functionality this would've come in handy
+    // if there was a refresh functionality this would've come in handy
     override fun onCleared() {
         page.value = 1
         listState = ListState.IDLE
